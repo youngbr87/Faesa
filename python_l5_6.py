@@ -8,7 +8,7 @@
 while True:
     
     str(print('---------------------------'))
-    str(print('  '))
+    str(print(' teste '))
     str(print('---------------------------'))
     
     resp = str(input('Deseja continuar ? [S]/[N] => '))
