@@ -27,11 +27,7 @@ while True:
     print()    
         
     str(print('Obrigado por nos consultar'))    
-    
-    
-    
-    
-    
+
     
     resp = str(input('Deseja continuar ? [S]/[N] => '))
     if resp in 'N,n':
