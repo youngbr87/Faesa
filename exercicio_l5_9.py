@@ -16,16 +16,16 @@ while True:
     if (age > 5) and (age < 7):
         str(print('O atleta é INFANTIL A')) 
     
-    if (age > 8) and (age < 11):
+    elif (age > 8) and (age < 11):
         str(print('O atleta é INFANTIL B'))
     
-    if (age > 12) and (age < 13):
+    elif (age > 12) and (age < 13):
         str(print('O atleta é JUVENIL A'))        
     
-    if (age > 14) and (age <= 17):
+    elif (age > 14) and (age <= 17):
         str(print('O atleta é JUVENIL B'))
         
-    if age > 18:
+    elif age > 18:
         str(print('O atleta é ADULTO'))
     
     else:

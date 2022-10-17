@@ -18,11 +18,11 @@ while True:
 
     if imc <= 20:
         str(print('Abaixo do peso'))
-    if imc <= 25:
+    elif imc <= 25:
         str(print('Peso normal'))
-    if imc <= 35:
+    elif imc <= 35:
         str(print('Exesso de peso'))        
-    if imc <= 50:
+    elif imc <= 50:
         str(print('Obesidade'))
     else:         
         

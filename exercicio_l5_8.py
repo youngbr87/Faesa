@@ -23,7 +23,7 @@ while True:
     if sal < 500:
         print('O  reajuste de salário vai ser: ', sal1)
 
-    if (sal >= 500) and (sal <= 1000):
+    elif (sal >= 500) and (sal <= 1000):
         print('O  reajuste de salário vai ser: ', sal2)    
     else: 
         print('O  reajuste de salário vai ser: ', sal3)
