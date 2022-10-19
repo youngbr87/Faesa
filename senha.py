@@ -19,7 +19,6 @@ while True:
     if x == senha:
         str(print('BEM VINDO!'))
         break
-        
     else:
         str(print('ACESSO NEGADO'))
         
