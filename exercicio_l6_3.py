@@ -18,4 +18,4 @@ for c in range(0,200):
     print(soma)
     
 
-print(f'{c*soma}')
+print(f'A soma é => {c*soma}')
