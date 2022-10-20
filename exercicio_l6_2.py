@@ -7,13 +7,24 @@
 
 
 
+from tkinter import N
+
+
 str(print('----------------------'))
-str(print('  Repetição de frase  '))
+str(print('      Fatorial        '))
 str(print('----------------------'))
 
-fat = 1
-cont = 1
+n = int(input('Digite um numero para calcular seu fatorial => '))
+c = n
+f = 1
+print('Calculando {}! =  '.format(n), end='')
 
-while (cont ):
-    num = float(input('Digite um numero => '))
-    fat * cont
+while c > 0:
+    print('{}'.format(c), end='')
+    print(' x ' if c > 1 else ' = ', end='')
+    f = f * c
+    c = c - 1
+
+str(print('{}'.format(f)))    
+    
+    
