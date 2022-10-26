@@ -18,8 +18,7 @@ while alt != 0:
     quant += 1
     if quant == 1:
         maior = alt
-    else:
-        if alt > maior:
+    elif alt > maior:
             maior = alt  
         
                  
