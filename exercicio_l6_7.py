@@ -14,3 +14,5 @@ str(print('---------------------------------'))
 num_a = float(input('Digite um número => '))
 num_b = float(input('Digite outro número => '))
 
+
+
