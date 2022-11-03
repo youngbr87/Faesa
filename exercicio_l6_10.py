@@ -25,18 +25,22 @@ while voto != -1:
    elif voto == 4:
        nulo +=1
    else:
-       str(print('Grato.'))
+       if voto == -1:
+        str(print('Grato.'))
+       else:
+           str(print('Opção invalida tente novamente ou digite [-1] para sair.'))
+           
        
 print() 
 
 print('-----------------------------------------------------')          
 
 if cand1 > cand2 and cand1 > cand3:
-        str(print('O candidato 1 recebeu mais voto'))
+        str(print('O candidato 1 recebeu mais votos'))
 elif cand2 > cand1 and cand2 > cand3:                            
-        str(print('O candidato 2 recebeu mais voto'))  
+        str(print('O candidato 2 recebeu mais votos'))  
 elif cand3 > cand1 and cand3 > cand2:                            
-        str(print('O candidato 3 recebeu mais voto')) 
+        str(print('O candidato 3 recebeu mais votos')) 
 else:
      str(print('Empate'))         
         
