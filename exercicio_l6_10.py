@@ -42,7 +42,7 @@ elif cand2 > cand1 and cand2 > cand3:
 elif cand3 > cand1 and cand3 > cand2:                            
         str(print('O candidato 3 recebeu mais votos')) 
 else:
-     str(print('Empate'))         
+     str(print('EMPATE'))         
         
 soma = cand1 + cand2 + cand3 + branc + nulo
 
@@ -54,10 +54,8 @@ str(print('O candidadto 2  recebeu', cand2, 'voto (s)'))
 str(print('O candidadto 3  recebeu', cand3, 'voto (s)'))
 
 print()
-str(print('Votos em branco', branc,))
-str(print('Votos em nulo', nulo,))
+str(print('Votos em branco => ', branc,))
+str(print('Votos em nulo => ', nulo,))
 
 print()
 str(print('O número total de eleitores foi => ', soma))
-
-
