@@ -6,5 +6,7 @@
 #Exercicio 11
 
 str(print('---------------------------------'))
-str(print('                  '))
+str(print('         Programa de pesca       '))
 str(print('---------------------------------'))
+
+pestot = float(input('Informe o peso total por dia =>  kg'))
