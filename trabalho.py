@@ -74,17 +74,13 @@ while True:
 
 #Print das repostas
 print('-=' *40)
-print (f'{"No.":<5}{"NOME":<15}{"IDADE":<15}{"CURSO":<15}{"PERIODO":<15}')
+print (f'{"No.":<5}{"NOME":<15}{"IDADE":<15}{"CURSO":<15}{"PERIODO":<15}{"ESPORTE":<15}{"FREQUENCIA":<15}')
 for i, a in enumerate(respostas):
-    print(f'{i:<5}{a[0]:<15}{a[1]:<15}{a[2]:<15}{a[3]:<15}')
-print()
-print()    
-print(f'{"ESPORTE":<15}{"FREQUENCIA":<15}')
-for i, a in enumerate(respostas):
-    print(f'{opcoesesportes[a[4] - 1]:<15}{opcoessemana[a[5] - 1]:<15}') 
+    print(f'{i:<5}{a[0]:<15}{a[1]:<15}{a[2]:<15}{a[3]:<15}{opcoesesportes[a[4] - 1]:<15}{opcoessemana[a[5] - 1]:<15}')
+
 print()
 #Abaixo através dos resultados dos vetores foi calculado os resultados
-print('-=' *40)
+print('-=' *50)
 print()
 print('APURAÇÃO DE RESULTADOS')
 print()
