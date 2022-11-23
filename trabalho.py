@@ -18,8 +18,6 @@ from calendar import c
 from ctypes.wintypes import LPFILETIME
 import string
 
-
-
     
 linha = '==========================='
 linha2 = '--------------------------------------------------------------'
@@ -29,61 +27,57 @@ print('Pesquisa ESPORTES')
 print(linha)
 print('')
 
+esporte = ['beach tenis']
+semana = ['2 X NA SEMANA']
+
 #Listas das respostas
 respostas = list()
-opcoesesportes = ['[1] - FUTEBOL', '[2] - VOLEI', '[3] - BASQUETE', '[4] - CICLISMO', '[5] - HANDBALL', '[6] - BEACH TENIS']
+opcoesesportes = ['[1] - FUTEBOL', '[2] - VOLEI', '[3] - BASQUETE', '[4] - CICLISMO', '[5] - HANDBALL', '[6] - OUTRO']
 opcoessemana = ['[1] - 1 X NA SEMANA', '[2] - 2 X NA SEMANA', '[3] - 3 X NA SEMANA', '[4] - 4 X NA SEMANA', '[5] - 5 X NA SEMANA OU MAIS']
 
 
-
 while True:
-    nome = str(input('Qual é o seu nome? '))
-    print('\n')
-    idade = input('Qual sua idade? ')
-    print('\n')
-    curso = str(input('Qual curso que você está fazendo? '))
-    print('\n')
-    periodo = input('Em qual periodo você está? ')
-    print()
-    print(linha2)
-    print()
-    #pergunta1
-    print('Qual seu esporte favorito ? \n')
-    i = 0 
-    for item in opcoesesportes:
-       print(item)  
-    print()   
-    esporte = int(input('Digite uma das opções: '))
-    print()
-    #pergunta2
-    print('Quantas vezes você pratica na semana? \n')
-    i = 0 
-    for item in opcoessemana:
-       print(item)  
-    print()
-    semana = int(input('Digite uma das opções: '))
-    print()
-    
-     #Apendice das perguntas
-    respostas.append([nome, idade, curso, periodo, esporte, semana])
-    
-    #Finalizar
-    resp = str(input('Deseja continuar? [S]/[N] => ')) 
-    if resp in 'N,n':
-           break 
+   print('''
+   0 - Entrar no programa
+   1 - Cadastrar esporte.
+   2 - Mostrar dados da lista.
+   3 - Remover dados da lista.
+      ''')
+   
+   opcaomenu = int(input('Digite a opção desejada: '))
+   if opcaomenu==0:
+      #pergunta1
+      print('Qual seu esporte favorito ? \n')
+      i = 0 
+      for item in opcoesesportes:
+         print(item)  
+      print()   
+      esporte = int(input('Digite uma das opções: '))
+      if esporte==6:
+         opcoesesportes[1]=str(input('Qual é o esporte -> '))
+      print()
+      #pergunta2
+      print('Quantas vezes você pratica na semana? \n')
+      i = 0 
+      for item in opcoessemana:
+         print(item)  
+      print()
+      semana = int(input('Digite uma das opções: '))
+      print()
+   elif opcaomenu==1:
+      opcoesesportes.append(str(input('Digite o nome do esporte => ')))
+   elif opcaomenu==2:
+      print('')
+      print('Essa são as suas listas:{}-{}'.format(esporte,semana)) 
+   elif opcaomenu==3:
+            print('DADOS ARMAZENADOS{}'.format(esporte,semana))
+            opcoesesportes = int(input('Digite o numero do esporte que deseja remover: '))
+            opcoesesportes-=1
+            esporte[opcoesesportes]="#"
+                  
+   respostas.append([esporte, semana])
 
-#Print das repostas
-print('-=' *40)
-print (f'{"No.":<5}{"NOME":<15}{"IDADE":<15}{"CURSO":<15}{"PERIODO":<15}{"ESPORTE":<15}{"FREQUENCIA":<15}')
-for i, a in enumerate(respostas):
-    print(f'{i:<5}{a[0]:<15}{a[1]:<15}{a[2]:<15}{a[3]:<15}{opcoesesportes[a[4] - 1]:<15}{opcoessemana[a[5] - 1]:<15}')
-
-print()
-#Abaixo através dos resultados dos vetores foi calculado os resultados
-print('-=' *50)
-print()
-print('APURAÇÃO DE RESULTADOS')
-print()
-print('Back end')
-#print('Java = ') f'{opcoeslpf}
-
+   #Finalizar
+   resp = str(input('Voltar para o menu? [S]/[N] => ')) 
+   if resp in 'N,n':  
+      break     
